@@ -2,6 +2,8 @@
 
 This repository contains code for detecting intersectional bias using the **Maximum Subgroup Discrepancy (MSD)** approach, comparing distributions (e.g., two subsets of US Census data) via protected subgroups.
 
+It also includes a modified version of hte [AIX 360 library](https://github.com/Trusted-AI/AIX360/).
+
 ---
 
 ## Installation

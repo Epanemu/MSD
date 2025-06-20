@@ -1,4 +1,4 @@
-# Bias Detection via Maximum Subgroup Discrepancy
+# Maximum Subgroup Discrepancy
 
 This repository contains code for detecting intersectional bias using the **Maximum Subgroup Discrepancy (MSD)** approach, comparing distributions (e.g., two subsets of US Census data) via protected subgroups.
 
@@ -87,3 +87,17 @@ Results will be saved to the working folder (`./`).
 - BRCG and Ripper require AIX360. There is a manually installed AIX360 with modified versions of the algorithms (to make them return a single conjunction). MDSS or other fairness methods can require AIF360.
 - Hydra automatically creates separate output folders for each run, storing logs and an `output.txt` with the distance results.
 
+---
+
+## Reference
+This method was introduced in a paper titled _Bias Detection via Maximum Subgroup Discrepancy_:
+
+```bibtex
+@inproceedings{MSD,
+  author = {Jiří Němeček and Mark Kozdoba and Illia Kryvoviaz and Tomáš Pevný and Jakub Mareček},
+  title = {Bias Detection via Maximum Subgroup Discrepancy},
+  year = {2025},
+  booktitle = {Proceedings of the 31st ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  series = {KDD '25}
+}
+```

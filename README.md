@@ -2,7 +2,7 @@
 
 This repository contains code for detecting intersectional bias using the **Maximum Subgroup Discrepancy (MSD)** approach, comparing distributions (e.g., two subsets of US Census data) via protected subgroups.
 
-It also includes a modified version of hte [AIX 360 library](https://github.com/Trusted-AI/AIX360/).
+It also includes a modified version of the [AIX 360 library](https://github.com/Trusted-AI/AIX360/).
 
 ---
 
@@ -21,7 +21,7 @@ It also includes a modified version of hte [AIX 360 library](https://github.com/
 ## Repository Structure
 
 - **experiment_enumerative.py**
-  - Runs the enumerative or direct approach comparing MSD against other distances.
+  - Runs the enumerative or direct approach, comparing MSD against other distances.
 
 - **experiment_sample_complexity.py**
   - Varies sample sizes to show how quickly each distance converges.
@@ -36,7 +36,7 @@ It also includes a modified version of hte [AIX 360 library](https://github.com/
   - Core logic for the MIO-based OneRule (single-term) solver, plus helper functions for distances, evaluation, etc.
 
 - **conf/**
-  - Hydra configuration files, specifying scenarios, seeds, model parameters.
+  - Hydra configuration files, specifying scenarios, seeds, and model parameters.
 
 ---
 
@@ -74,16 +74,16 @@ After running experiments, you can produce plots:
    ```
     python ./plot-maker/plots_for_paper.py base
     ```
-   And instead of 'base' you can also choose 'relative' or 'RSE' for different y-axis interpretations
+   And instead of 'base', you can also choose 'relative' or 'RSE' for different y-axis interpretations
 
-Results are will be saved to the working folder (`./`).
+Results will be saved to the working folder (`./`).
 
 ---
 
 ## Notes
 
-- Plots are being generated from data in folder `batch_precomputed`. If you would like to plot your own experiments, move it to the folder, and rename them, or change the plotting scripts.
+- Plots are being generated from data in the folder `batch_precomputed`. If you would like to plot your own experiments, move them to the folder, and rename them, or modify the plotting scripts.
 - The code expects certain columns in Folktables data; see `PROTECTED_ATTRS` in `scenarios/folktables_scenarios.py`.
-- BRCG and Ripper require AIX360. There is manually installed AIX360 with modified versions of the algorithms. MDSS or other advanced fairness methods can require AIF360.
+- BRCG and Ripper require AIX360. There is a manually installed AIX360 with modified versions of the algorithms (to make them return a single conjunction). MDSS or other fairness methods can require AIF360.
 - Hydra automatically creates separate output folders for each run, storing logs and an `output.txt` with the distance results.
 

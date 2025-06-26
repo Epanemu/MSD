@@ -7,6 +7,8 @@ It also includes a modified version of the [AIX 360 library](https://github.com/
 ---
 
 ## Installation
+This repository contains all the necessary details for reproducibility.
+For an official version to use in your work, see [HumanCompatible.Detect library](https://github.com/humancompatible/detect). It contains example use cases and documentation.
 
 **Install Dependencies**:
     ```

@@ -92,7 +92,7 @@ Results will be saved to the working folder (`./`).
 ---
 
 ## Reference
-This method was introduced in a paper titled _Bias Detection via Maximum Subgroup Discrepancy_:
+This method was introduced in a paper titled [_Bias Detection via Maximum Subgroup Discrepancy_](https://dl.acm.org/doi/10.1145/3711896.3736857):
 
 ```bibtex
 @inproceedings{MSD,
